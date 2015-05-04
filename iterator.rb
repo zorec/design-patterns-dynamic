@@ -13,19 +13,27 @@ class TreeNode
     @left = left
     @operator = operator
     @right = right
+    @stack = []
+    @iterator = each
+  end
+
+  def partial_eval
+    item = nil
+    loop do
+      item = @iterator.next
+      break unless item
+      @stack << item
+      if ['+', '-', '*', '/'].include?(item.to_s)
+        left, right, op = @stack.pop(3)
+        result = left.send(op, right)
+        @stack << result
+        return result
+      end
+    end
   end
 
   def each(&block)
     value.each(&block)
-  end
-
-  def iterator_each(&block)
-    iterator = each
-    item = nil
-    loop do
-      yield item if item
-      item = iterator.next
-    end
   end
 
   def value
@@ -38,5 +46,6 @@ expr2 = TreeNode.new(ListNode.new(9.0), :/, ListNode.new(4))
 expr = TreeNode.new(expr1, :+, expr2)
 expr.each {|i| print "#{i} " }
 puts
-expr.iterator_each {|i| print "#{i} " }
-puts
+puts expr.partial_eval
+puts expr.partial_eval
+puts expr.partial_eval

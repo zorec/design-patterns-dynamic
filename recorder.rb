@@ -1,4 +1,4 @@
-# Design pattern: recorder
+# Design pattern: recorder, the ultimate decorator pattern
 # Description: record actions to allow playback
 # Full credits: Neal Ford, ThoughtWorks http://assets.en.oreilly.com/1/event/27/%22Design%20Patterns%22%20in%20Dynamic%20Languages%20Presentation.pdf
 

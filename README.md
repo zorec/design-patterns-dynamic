@@ -9,4 +9,4 @@ This project aims to demonstrate these design patterns on specific examples in a
 
 [Neal Ford Design Patterns in Dynamic Languages @ThoughtWorks](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2008/DVP402)
 
-[Peter Norvig, Design Patterns in Dynamic Languages](http://norvig.com/design-patterns/design-patterns.pdf)
+[Peter Norvig, Design Patterns in Dynamic Programming](http://norvig.com/design-patterns/design-patterns.pdf)

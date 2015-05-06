@@ -1,0 +1,53 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+
+\title{Design patterns in dynamic languages}
+\author{xbrand04@stud.fit.vutbr.cz}
+\date{6.5.2015}
+
+\pdfinfo{%
+  /Title    (Design patterns in dynamic languages)
+  /Author   (xbrand04@stud.fit.vutbr.cz)
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords (dynamic languages, design patterns, Ruby)
+}
+
+\begin{document}
+\maketitle
+
+Design patterns as they are defined and known from Gang of four book "Design Patterns: Elements of
+reusable object-oriented software" represents ways to solve common problems in a software design.
+
+In this text I am going to present various examples of design patterns in Ruby which
+is great object-oriented representative of dynamic language. The emphasis is put on presenting
+Ruby's dynamic features (like meta-programming) which are not possible in static languages. As a
+result of these we will find out that design patterns can be easily expressed in dynamic languages.
+
+% Each section starts with short description of design pattern followed by the specific example of
+% problem and step by step solution.
+
+\section{Iterator}
+"The iterator pattern is used to provide a standard interface for traversing a collection of items
+in an aggregate object without the need to understand its underlying structure."
+
+Let us assume that we have an expression tree classes and we want to serialize them to access every
+item of an expression.
+
+Ruby provides two kinds of iterators to process elements in sequantial manner. There is internal
+iterator which is defined and manipulated internally. External iterator can be passed around and
+requires explicit control e.g. proceeding loop and moving items (calling next).
+
+% \section{Interpreter}
+% \section{Builder}
+
+
+% TODO: quote from Peter N.
+% Although examples might feel contrieved, ...
+
+\end{document}
+
+% TODO: bibliography
